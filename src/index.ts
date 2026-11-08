@@ -17,7 +17,21 @@ import { anim } from './anim';
  */
 
 /** Everything in one object: `styles.view.flex1`, `styles.v.flex1`, `styles.t.bold`, … */
-export const styles = {
+export interface Styles {
+    view: typeof view;
+    v: typeof view;
+    text: typeof text;
+    t: typeof text;
+    img: typeof img;
+    image: typeof img;
+    i: typeof img;
+    colors: typeof colors;
+    c: typeof colors;
+    anim: typeof anim;
+    a: typeof anim;
+}
+
+export const styles: Styles = {
     view,
     v: view,
     text,
